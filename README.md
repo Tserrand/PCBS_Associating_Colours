@@ -22,7 +22,7 @@ You'll find in this document the full code for the experiment. It mostly uses th
 Each different case is subset in the different blocks of the experiment, the first one being focused on the learning process, while the other three are the core of the experiment.
 
 
-Experiment design and initatilising
+Experiment design and initialising
 ------------
 
 ### Creation of the tools
@@ -246,7 +246,7 @@ Then, we add every block to the experiment, define response device from four key
             exp.data.add([button, rt])
             exp.data.rename("associating_colours_results" + str(exp.subject) + ".xpd")
 
-    expyriment.control.end(goodbye_text= "Thank you !", goodbye_delay = 3000
+    expyriment.control.end(goodbye_text= "Thank you !", goodbye_delay = 3000)
     
   The final line of experiment.control enable us to store the data of pressed key and response time for a potential analysis of the results. It is expected that the participants will be faster at recognising the font colour of the congruent cases of "colours" and COLOURS, as well as in the cases of neutral words. What I interstingly observed doing myself the experiment though, is that word-related colours *do* impact the response time of recognising the COLOUR (although the precise amount of this impact probably varies with the sensitivity of the participants in regards with the connexion between the colour-related word and the colour itself).
   
